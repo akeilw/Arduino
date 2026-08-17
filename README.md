@@ -1,65 +1,12 @@
-# Simple LED Circuit 2x
-## Notes
-- this is assuming the circuit is already made
-- i used this [video](https://www.youtube.com/watch?v=O4JACbIQX_w&list=PLGs0VKk2DiYx6CMdOQR_hmJ2NbB4mZQn-&index=3) to make the circuit
-- 50 mins
+# Simple LED Circuit Iterations
 
-## Installations
-- https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.10_Windows_64bit.exe
-    - Arduino IDE to make device and Arduino compatible
+## 1st Iteration
+- Added Serial.print() and Serial.println() codes
+- Followed tutorial, made it print which LED is blinking and print lines based on amount of times it blinks
+- Played around, made it so that after yellow finishes blinking it says 6 and after red finishes it says 7
 
-## Materials
-- 4x breadboard jumpers or male-to-male pin wire
-- 2x resistors
-- 2x LEDs (used yellow and red in code)
-- Breadboard and Arduino
-
-## Instructions
-After setup, copy code on https://github.com/akeilw/Arduino/blob/simple-led-circuit/simpleledcircuit/simpleledcircuit.ino
-
-Or follow instructions to understand. You can rewrite your own variables and compare to my code
-
-1. for your first LED, shift the starting code down to 3 and on line 1 write 'int yellowPin=2;' The integer value depends on the hole on the digital line you plugged your jumper cable to. This line represents a global variable when outside the other functions
-2. for the second LED, repeat on a new line with different variable name and hole number or digital integer. Mine was 'int redPin=3;'
-3. OPTIONAL, WRITE TO PRACTICE... write on a new line 'int yellowOnTime=100;' this will represent time on. Write another similar to this to represent time off 'int yellowOffTime=100;' . Repeat for the other LED
-4. under void setup, write 'pinMode(yellowPin, OUTPUT); pinMode(redPin, OUTPUT);' This will run once and set up the loop code
-5. under void loop, write 'digitalWrite(yellowPin, HIGH)' remember HIGH represents the LED turning on or producing a high voltage
-6. create a new line 'delay(yellowOnTime);'
-7. repeat for time off, with LOW
-8. repeat 5-7 for the other LED
-9. press the arrow to upload code
-10. to make it blink a specific number of ties, read below
-
-what the for () {} means:
-
-for (initialization; condition; increment/decrement) {}
-
-(runs once, like a setup; if true it will loop, if false it ends ; executes after every iteration of the loop) {code that loops}
-
-11. write 'for ()' and separate and close both the first LED loop and the second LED loop with {}
-12. rewrite the for() to 'for (int i=1; i<=10; i=i+1)' this means it begins with 1, checks if condition is satisfied, and adds 1 to make i=2 so it represents a second loop and so on
-13. OPTIONAL you can rewrite the 10 as a new global variable. I wrote 'int numYellowBlink=6;' and in the loop i wrote 'for (int i=1; i<=numYellowBlink; i=i+1)'
-14. repeat 11-13 for the second LED
-15. upload and debug
-
-Manipulate timer values, or try moving around the circuit to understand the breadboard (make sure to not fry the LEDs)
-
-# Journal
-## Credits and Resources
-https://www.youtube.com/@paulmcwhorter
-https://www.youtube.com/playlist?list=PLGs0VKk2DiYx6CMdOQR_hmJ2NbB4mZQn-
-- - -
-### Aug 16 2026
-Got my Arduino parcel. I got an Elegoo Starter kit that comes with the Elegoo Uno R3. My friend suggested to begin with Paul McWhorter, a youtuber tech guy. I completed a tutorial project that works on basic coding. It comprised of turning the LED on pin 13 (I think) on and off. I also took notes on his semiconductor and began diode lesson and working on creating a basic circuit for two LEDs in a circuit, practicing with the breadboard. I was able to loop the LEDs and make the first yellow LED to blink six times and the second red LED to blink seven times.
-- - -
-## Codes and Funtions
-
-int(name=value)    // set a new variable with a certain integer
-
-pinMode(name, value)    // set a pin to do something idk yet
-
-digitalWrite(name, value)
-
-delay(ms)    // delay code by an amount of ms
-
-for (initialization; condition; increment/decrement) {}   // runs once, like a setup; if true it will loop, if false it ends ; executes after every iteration of the loop
+## 2nd Iteration
+- Added String variable=value codes
+- Learned float codes for decimal numbers
+- On void setup, used strings to state "Only In Ohio"
+- Used global string variables in Sertial.print() codes
