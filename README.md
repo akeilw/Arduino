@@ -15,3 +15,5 @@ pinMode(name, value)    // set a pin to do something idk yet
 digitalWrite(name, value)
 
 delay(ms)    // delay code by an amount of ms
+
+for (initialization; condition; increment/decrement) {}   // runs once, like a setup; if true it will loop, if false it ends ; executes after every iteration of the loop
