@@ -1,6 +1,7 @@
 # Simple LED Circuit 2x
 ## Notes
 - this is assuming the circuit is already made
+- i used [https://www.youtub](https://www.youtube.com/watch?v=O4JACbIQX_w&list=PLGs0VKk2DiYx6CMdOQR_hmJ2NbB4mZQn-&index=3)
 
 ## Installations
 - https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.10_Windows_64bit.exe
