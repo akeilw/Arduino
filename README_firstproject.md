@@ -1,8 +1,12 @@
 # Tutorial Project
 ## Notes
 - make sure code always ends in semicolons, ";"
-- when code changes colour, it means it is a legit function or input, ie. 'digitalWrite' turns orange
-- if it does not change colour, it means it *may* not work, ie. 'digitalwrite' stays white
+- orange = function
+- blue = constant
+- teal = data
+- grey = ignored
+- black or white (bright or dark mode) = custom
+- type in lowerCamelCase ie. onlyInOhio()
 
 - - -
 
@@ -16,6 +20,12 @@
 - PC or laptop
 
 ## Instructions
+Setup
+1. Preinstall apps
+2. Plug in Arduino into PC
+3. Check if connected: Tools -> Port -> board, mine is called "COM3"
+
+Main
 1. Open Arduino IDE
 2. Under void setup, between the squiggly lines {}, type 'pinMode(13,OUTPUT);'
 4. Under void loop, between the squiggly lines {}, type 'digitalWrite(13,HIGH);'
