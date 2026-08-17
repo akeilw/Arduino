@@ -9,6 +9,9 @@ Got my Arduino parcel. I got an Elegoo Starter kit that comes with the Elegoo Un
 ## Codes and Funtions
 
 int(name=value)    // set a new variable with a certain integer
+
 pinMode(name, value)    // set a pin to do something idk yet
+
 digitalWrite(name, value)
+
 delay(ms)    // delay code by an amount of ms
