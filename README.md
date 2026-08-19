@@ -8,6 +8,9 @@ Got my Arduino parcel. I got an Elegoo Starter kit that comes with the Elegoo Un
 
 ### Aug 17 2026
 I reassembled the LED circuit to play with the LEDs in Arduino IDE. Using C++ coding and pushing through three tutorial videos, I managed to make progress through inputs and outputs in the Serial Monitor. I monitored my progress in testing-codes. I struggled on the third iteration with my global variables like 'numYellowBlink' and with the Serial monitor itself, but I simply forgot a capital in the variable and needed to change the Serial monitor to send no line endings instead of /n since I was in "New Line". I also learned about baud rate, which sends an amount of signals per second.
+
+### Aug 19 2026
+Completed the fourth iteration of the LED circuit, where I used more 'while()' loops and introduced 'analogWrite()'. I discovered that the squiggly lines "`" support Pulse Width Modulation, so I switched my pin values in order to change voltage in the diodes. I strayed from the tutorial so that through the Serial Monitor I can input any voltage to control the brightness of the LEDs.
 - - -
 ## Codes and Functions
 
@@ -31,3 +34,4 @@ Serial.parseInt() or Serial.parseFloat()    // pc/code reads an integer or decim
 
 Serial.read() or Serial.readString()    // pc/code reads a single letter or an entire string and communicates to microcontroller
 
+analogWrite()    // simulate an analog output voltage on a digital pin via PWM
