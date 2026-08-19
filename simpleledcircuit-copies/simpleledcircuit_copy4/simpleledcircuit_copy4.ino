@@ -10,8 +10,8 @@ int writeValYel;
 int writeValRed;
 int WVtoVolY;
 int WVtoVolR;
-String yelMessage="Yellow Blinking";  // Declare string variable
-String redMessage="Red Blinking";   
+String yelMessage="Yellow Blinking at";  // Declare string variable
+String redMessage="Red Blinking at";   
 void setup() {
   Serial.begin(921600);
   pinMode(yellowPin, OUTPUT);
@@ -35,7 +35,7 @@ Serial.println("What brightness/voltage do you want it at? 0-5");
 void loop() {
 
 int i=1;
-Serial.println(yelMessage);
+Serial.println(yelMessage + " "+ writeValYel + "V");
   while (i<=numYellowBlink) {
    Serial.print("    Blink #:  ");
    Serial.println(i);
@@ -49,7 +49,7 @@ Serial.println(yelMessage);
 
   i=1;
 Serial.println("    ");
-Serial.println(redMessage);
+Serial.println(redMessage + " " + writeValRed + "V");
   while (i<=numRedBlink) {
    Serial.print("    Blink #:  ");
    Serial.println(i);
