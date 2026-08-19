@@ -19,3 +19,7 @@
 ### 4th Iteration (copy3)
 - Replaced 'for()' loops with 'while()' loops
 - Introduced declaring variables and simple logic, mimicking the conditions and increments of 'for()' loops
+
+### 5th Iteration (copy4)
+- Added 'analogWrite()' to plug in analog voltage
+- Went further to use a conversion from Serial inputs; PWM = input-voltage*51
