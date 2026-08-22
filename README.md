@@ -6,7 +6,7 @@
 - 5x jumper wires
 - 1x potentiometer
 
-##Instructions
+## Instructions
 1. Setup circuit, on outer end of the potentiometer should be + and one end of the other end should be -
 2. The middle pin should connect to an analog pin on the arduino
 3. Create this first code, declaring all global variables
