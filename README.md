@@ -11,6 +11,10 @@ I reassembled the LED circuit to play with the LEDs in Arduino IDE. Using C++ co
 
 ### Aug 19 2026
 Completed the fourth iteration of the LED circuit, where I used more 'while()' loops and introduced 'analogWrite()'. I discovered that the squiggly lines "`" support Pulse Width Modulation, so I switched my pin values in order to change voltage in the diodes. I strayed from the tutorial so that through the Serial Monitor I can input any voltage to control the brightness of the LEDs.
+
+### Aug 21 2026
+I began working on a potentiometer circuit. To challenge myself, I tried to make the serial monitor read the voltage of both pins of the potentiometer. However, it only works for 5 volts. I also discovered that I can use the potentiometer to simulate incoming analog inputs for my upcoming project utilizing an EMG. I will steer away from practicing Arduino for a while to work on Python coding to work with connecting outputs from C++ and creating data in Python
+
 - - -
 ## Codes and Functions
 
@@ -35,3 +39,5 @@ Serial.parseInt() or Serial.parseFloat()    // pc/code reads an integer or decim
 Serial.read() or Serial.readString()    // pc/code reads a single letter or an entire string and communicates to microcontroller
 
 analogWrite()    // simulate an analog output voltage on a digital pin via PWM
+
+analogRead()    // read an analog input voltage from an incoming end of the circuit
