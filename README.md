@@ -30,4 +30,5 @@
    - voltage = rawinput/150 for me
 8. create a line in the void loop, where voltage  = readValue/slope
 9. You will now be reading on the serial monitor the voltage through one of the ends
+
 Optional:  I went a bit further to produce two readings from the left pin and the right pin of the potentiometer
